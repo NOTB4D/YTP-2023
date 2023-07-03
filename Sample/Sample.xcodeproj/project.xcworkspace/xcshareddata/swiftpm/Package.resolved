@@ -1,0 +1,41 @@
+{
+  "pins" : [
+    {
+      "identity" : "mberrorkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mobven/MBErrorKit.git",
+      "state" : {
+        "branch" : "develop",
+        "revision" : "a187a819855006c2d3681a20843b16edbd695ab3"
+      }
+    },
+    {
+      "identity" : "mobkitcore",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mobven/MobKitCore.git",
+      "state" : {
+        "branch" : "develop",
+        "revision" : "40abe8310994dd8c814dd93466d0dc00e07006f9"
+      }
+    },
+    {
+      "identity" : "networking",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mobven/Networking",
+      "state" : {
+        "branch" : "develop",
+        "revision" : "d60373c66bbc41faa811979eeecffd5a51ea4ada"
+      }
+    },
+    {
+      "identity" : "sdwebimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImage.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "7d7debbd262ddac7c75c9d40c78e929839dcbad0"
+      }
+    }
+  ],
+  "version" : 2
+}

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nxe-uw-h5I">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Book Detail View Controller-->
+        <scene sceneID="D3m-6j-bBI">
+            <objects>
+                <viewController storyboardIdentifier="BookDetailViewController" id="nxe-uw-h5I" customClass="BookDetailViewController" customModule="Sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="chM-je-gA4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8ch-Af-L7a">
+                                <rect key="frame" x="10" y="54" width="394" height="381"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="394" id="ErU-We-Gnd"/>
+                                    <constraint firstAttribute="height" constant="381" id="XhU-TF-4ar"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w1j-Th-87W">
+                                <rect key="frame" x="10" y="465" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="r1q-iE-jbN">
+                                <rect key="frame" x="10" y="506" width="394" height="346"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="acR-sl-ate"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="r1q-iE-jbN" firstAttribute="top" secondItem="w1j-Th-87W" secondAttribute="bottom" constant="20" id="1ih-fX-Ut5"/>
+                            <constraint firstItem="acR-sl-ate" firstAttribute="trailing" secondItem="r1q-iE-jbN" secondAttribute="trailing" constant="10" id="93f-kk-olT"/>
+                            <constraint firstItem="8ch-Af-L7a" firstAttribute="top" secondItem="acR-sl-ate" secondAttribute="top" constant="10" id="JLn-VF-iTT"/>
+                            <constraint firstItem="acR-sl-ate" firstAttribute="trailing" secondItem="w1j-Th-87W" secondAttribute="trailing" constant="10" id="KpC-xf-MDP"/>
+                            <constraint firstItem="w1j-Th-87W" firstAttribute="top" secondItem="8ch-Af-L7a" secondAttribute="bottom" constant="30" id="ZXg-cJ-M6x"/>
+                            <constraint firstItem="8ch-Af-L7a" firstAttribute="leading" secondItem="acR-sl-ate" secondAttribute="leading" constant="10" id="Zo7-sS-4xw"/>
+                            <constraint firstItem="acR-sl-ate" firstAttribute="trailing" secondItem="8ch-Af-L7a" secondAttribute="trailing" constant="10" id="gLb-Z4-8em"/>
+                            <constraint firstItem="w1j-Th-87W" firstAttribute="leading" secondItem="acR-sl-ate" secondAttribute="leading" constant="10" id="gO9-zv-VJM"/>
+                            <constraint firstItem="r1q-iE-jbN" firstAttribute="leading" secondItem="acR-sl-ate" secondAttribute="leading" constant="10" id="hI9-Bf-mR7"/>
+                            <constraint firstItem="acR-sl-ate" firstAttribute="bottom" secondItem="r1q-iE-jbN" secondAttribute="bottom" constant="10" id="lmj-a8-9Jy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bookDetailDecsTextView" destination="r1q-iE-jbN" id="ED1-Vf-67W"/>
+                        <outlet property="bookDetailImage" destination="8ch-Af-L7a" id="1MJ-Hj-mEL"/>
+                        <outlet property="bookDetailTitleLable" destination="w1j-Th-87W" id="tRr-pP-aPl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cZo-gs-e4f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="105.79710144927537" y="27.455357142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
